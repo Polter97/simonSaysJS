@@ -35,6 +35,7 @@ class Game {
           }
         scoreCount = 0
         score.innerHTML = scoreCount
+        btnStart.disabled = false
     }
     
     togglebtnStart() {
@@ -177,4 +178,5 @@ class Game {
 
 function startGame() {    
     window.Game = new Game()
+    btnStart.disabled = true
 }
