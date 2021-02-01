@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Says</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="gameboard">
+        <div id="xiketic" class="color xiketic left" data-color="xiketic"></div>
+        <div id="green" class="color green right" data-color="green"></div>
+        <div id="persian" class="color persian left" data-color="persian"></div>
+        <div id="yellow" class="color yellow right" data-color="yellow"></div>
+        <button id="btnStart" class="btn-start" onclick="startGame()">
+          Start Game
+        </button>
+      </div>
+      <section class="score__section">
+        <div>
+          <span>Score:</span>
+          <p id="score">0</p>
+        </div>
+        <div>
+          <span>Max score:</span>
+          <p id="max-score">0</p>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #dedede;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: auto;
+  background-color: #33312e;
+}
+
+.score__section {
+  display: flex;
+  align-self: flex-start;
+}
+
+.gameboard {
+  height: 100vh;
+  width: 100vh;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  max-height: 60vh;
+  max-width: 60vh;
+}
+
+.color {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+}
+
+.color.active {
+  cursor: pointer;
+  transition: 150ms all;
+  transform-origin: center center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: left;
+}
+
+.xiketic {
+  background: #020122;
+}
+
+.xiketic.light {
+  background: #0c0a40;
+}
+
+.yellow {
+  background: #eec857;
+}
+
+.yellow.light {
+  background: #ffe7a2;
+}
+
+.persian {
+  background: #721817;
+}
+
+.persian.light {
+  background: #9f3c3b;
+}
+
+.green {
+  background: #093824;
+}
+
+.green.light {
+  background: #206548;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+    display: block;
+  }
+
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    display: block;
+  }
+
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+
+.btn-start {
+  transition: display 2s;
+  -webkit-transition: display 2s;
+  transition: visibility 1s;
+  -webkit-transition: visibility 1s;
+
+  cursor: pointer;
+  width: 420px;
+  height: 100px;
+  background: #ecf0f1;
+  color: #2c3e50;
+  border: none;
+  border-bottom: 4px solid #c4c6c7;
+  border-radius: 8px;
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 210px);
+  transition: 0.5s;
+  outline: none;
+}
+
+.btn-start:hover {
+  color: #ecf0f1;
+  background: #2c3e50;
+  border-bottom: 4px solid #1f3346;
+  letter-spacing: 0.1em;
+}
+
+.btn-start:active {
+  transform: scale(0.95);
+}
+
+.hide {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  visibility: hidden;
+}
+
+.score__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  color: #ecf0f1;
+}
+
+.score__section div {
+  display: flex;
+}
+
+.score__section div > span {
+  margin-right: 10px;
+}
