@@ -1,4 +1,4 @@
 # simonSaysJS
 A small game fully made with JS<br>
 
-Try it [here](https://polter97.github.io/js-simon-says/)
+Try it [here](https://polterskn.github.io/js-simon-says/)
